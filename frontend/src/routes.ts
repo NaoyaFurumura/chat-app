@@ -1,6 +1,8 @@
-import { type RouteConfig, route } from "@react-router/dev/routes";
+import { type RouteConfig, layout, route } from "@react-router/dev/routes";
 
 export default [
   route("/login", "./pages/login/login.tsx"),
-  route("/", "./pages/Home/Home.tsx"),
+  layout('./features/Auth/AuthGuard.tsx', [
+     route("/", "./pages/Home/Home.tsx")
+  ])
 ] satisfies RouteConfig;
