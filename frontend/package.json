@@ -11,14 +11,17 @@
   },
   "dependencies": {
     "@auth0/auth0-react": "^2.15.0",
+    "@react-router/node": "^7.13.0",
     "@types/react-router-dom": "^5.3.3",
     "axios": "^1.13.5",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "react-router-dom": "^7.13.0"
+    "react-router-dom": "^7.13.0",
+    "isbot": "^5"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
+    "@react-router/dev": "^7.13.0",
     "@types/node": "^24.10.1",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
