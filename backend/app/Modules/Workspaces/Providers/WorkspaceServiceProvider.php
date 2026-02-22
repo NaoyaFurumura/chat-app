@@ -2,7 +2,7 @@
 namespace App\Modules\Workspaces\Providers;
 
 use App\Modules\Workspaces\Domains\Repositories\ICreateWorkspace;
-use App\Modules\Workspaces\Effects\CreateWorkspace;
+use App\Modules\Workspaces\Effects\CreateWorkspaceRepository;
 use Illuminate\Support\ServiceProvider;
 
 class WorkspaceServiceProvider extends ServiceProvider
@@ -11,7 +11,7 @@ class WorkspaceServiceProvider extends ServiceProvider
     {
         $this->app->bind(
             ICreateWorkspace::class,
-            CreateWorkspace::class
+            CreateWorkspaceRepository::class
         );
     }
 

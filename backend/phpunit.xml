@@ -6,11 +6,9 @@
 >
     <testsuites>
         <testsuite name="Unit">
-            <directory>tests/Unit</directory>
             <directory>app/Modules</directory>
         </testsuite>
         <testsuite name="Feature">
-            <directory>tests/Feature</directory>
             <directory>app/BrowserApi</directory>
         </testsuite>
     </testsuites>
