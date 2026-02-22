@@ -4,6 +4,7 @@ services:
       context: ./frontend
       dockerfile: ../docker/node/Dockerfile
     container_name: sample_slack_frontend
+    command: sh -c "CI=true pnpm install --frozen-lockfile && pnpm run dev"
     ports:
       - "3000:3000"
     volumes:
