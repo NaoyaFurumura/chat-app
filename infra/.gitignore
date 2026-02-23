@@ -1,0 +1,6 @@
+# infra/.gitignore
+
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl  # 環境依存なのでignoreが無難
